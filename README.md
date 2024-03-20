@@ -28,11 +28,21 @@ COMANDOS NO TERMINAL
 CRIANDO ARQUIVOS...
 
     **src**: É uma abreviação de "source". É uma maneira de organizar o código-fonte do projeto. Muito útil em projetos grandes. Também é bom para melhorar a modularização do aplicativo e facilitar a manutenção do código. Também é uma boa prática por melhorar a legibilidade da estrutura de diretórios. 
+
     **variaveis.env**: É um arquivo de configuração. Usaremos o arquivo pra armarzenar configurações do sistema e variáveis como por exemplo uma porta de conexão nossa com o servidor, nosso string de conexão com o banco de dados, usuário, senha... 
 
-ALTERAÇÕES NO ARQUIVO JSON
+    **routes.js**:São as rotas e caminhos que estão dentro da API. Quando formos configurar o CRUD (Create, Read, update, delete) vamos ter caminhos para criar, ler, alterar e deletar.
+
+    **server.js**: 'dotenv' ajuda a ler o arquivo de variável de ambiente (aqui no caso variaveis.env). Então colocamos ele como parâmetro usando o path.
+        cors: Permite acesso pra trabalhar com recursos de outros site mesmo estando em dominios diferentes.
+        linha "const routes = require('./routes') " é onde mostra onde estará a rota
+
+    **packpage.json**(gerado por comando no terminal): É um arquivo utilizado em projetos Node.js para descrever o próprio projeto, incluindo metadados como nome, versão, descrição, scripts de inicialização, testes, entre outros. Além disso, o package.json é usado para listar as dependências do projeto, ou seja, os pacotes que o projeto utiliza. Isso permite que outros desenvolvedores possam facilmente instalar as mesmas dependências e executar o projeto em seus próprios ambientes de desenvolvimento.
+
+    **packpage-lock.json**(gerado por comando no terminal):um arquivo gerado automaticamente que registra as versões exatas de todas as dependências do seu projeto. Ele garante que, ao instalar as dependências em outro ambiente, as mesmas versões serão instaladas, evitando inconsistências e garantindo a reprodução consistente do ambiente de desenvolvimento.
 
 
-
+EXPLICANDO PÁGINAS...
+    routes: Fazendo uma requisição e chamando o express.Quando essa rota for executada de alguma maneira iremos chama-la e exporta-la. 
 
 
